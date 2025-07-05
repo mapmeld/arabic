@@ -15,6 +15,12 @@
                 font-weight: normal;
                 font-style: normal;
             }
+            @font-face {
+                font-family: "Noto Sans BOLD";
+                src: url("./notosans-bold.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
 
             body {
                 font-family: arial;
@@ -23,11 +29,17 @@
             td {
                 padding: 5px;
             }
-            td {
+            tbody th {
+                font-weight: normal;
+            }
+            td.first-of-type {
                 font-family: "Noto Sans OG";
             }
-            td:last-of-type {
+            td {
                 font-family: "Noto Sans MOD";
+            }
+            td:last-of-type {
+                font-family: "Noto Sans BOLD";
             }
         </style>
     </head>
@@ -41,20 +53,24 @@
                 <th>Name</th>
                 <th>Current</th>
                 <th>Updated</th>
+                <th>Bold</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>LAM WITH ALEF</td>
+                    <th>LAM WITH ALEF</th>
+                    <td>لا</td>
                     <td>لا</td>
                     <td>لا</td>
                 </tr>
                 <tr>
-                    <td>LAM WITH V ABOVE</td>
+                    <th>LAM WITH V ABOVE</th>
+                    <td>ڵا</td>
                     <td>ڵا</td>
                     <td>ڵا</td>
                 </tr>
                 <tr>
-                    <td>LAM DOT ABOVE</td>
+                    <th>LAM DOT ABOVE</th>
+                    <td>ڶا</td>
                     <td>ڶا</td>
                     <td>ڶا</td>
                 </tr>
@@ -71,42 +87,50 @@
                 </tr>
                 -->
                 <tr>
-                    <td>LAM 3 DOTS ABOVE</td>
+                    <th>LAM 3 DOTS ABOVE</th>
                     <td>ڷا</td>
                     <td>ڷا</td>
+                    <td>ڷا</td>
                 </tr>
                 <tr>
-                    <td>LAM 3 DOTS BELOW</td>
+                    <th>LAM 3 DOTS BELOW</th>
                     <td>ڸا</td>
                     <td>ڸا</td>
+                    <td>ڸا</td>
                 </tr>
                 <tr>
-                    <td>ALEF WITH HAMZA ABOVE</td>
+                    <th>ALEF WITH HAMZA ABOVE</th>
                     <td>لٔا</td>
                     <td>لٔا</td>
+                    <td>لٔا</td>
                 </tr>
                 <tr>
-                    <td>ALEF WITH HAMZA BELOW</td>
+                    <th>ALEF WITH HAMZA BELOW</th>
                     <td>لاٟ</td>
                     <td>لاٟ</td>
+                    <td>لاٟ</td>
                 </tr>
                 <tr>
-                    <td>ALEF MADDA</td>
+                    <th>ALEF MADDA</th>
                     <td>لآ</td>
                     <td>لآ</td>
+                    <td>لآ</td>
                 </tr>
                 <tr>
-                    <td>ALEF WASLA</td>
+                    <th>ALEF WASLA</th>
                     <td>لٱ</td>
                     <td>لٱ</td>
+                    <td>لٱ</td>
                 </tr>
                 <tr>
-                    <td>ALEF MAKSURA</td>
+                    <th>ALEF MAKSURA</th>
+                    <td>ى‎</td>
                     <td>ى‎</td>
                     <td>ى‎</td>
                 </tr>
                 <tr>
-                    <td>Test final form</td>
+                    <th>Test final form</th>
+                    <td>مڵابس</td>
                     <td>مڵابس</td>
                     <td>مڵابس</td>
                 </tr>
