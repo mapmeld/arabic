@@ -1,9 +1,9 @@
-buildVariable: true
+buildVariable: false
 familyName: Noto Sans Arabic UI
 googleFonts: true
 includeSubsets:
-- from: Noto Sans
-  name: GF_Latin_Core
+  - from: Noto Sans
+    name: GF_Latin_Core
 recipeProvider: noto
 sources:
-- NotoSansArabicUI.glyphs
+  - NotoSansArabicUI.glyphs
