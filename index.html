@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            @font-face {
+                font-family: "Noto Sans OG";
+                src: url("./notosans-og.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "Noto Sans MOD";
+                src: url("./notosans-mod.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            body {
+                font-family: arial;
+                margin: 15px;
+            }
+            td {
+                padding: 5px;
+            }
+            td {
+                font-family: "Noto Sans OG";
+            }
+            td:last-of-type {
+                font-family: "Noto Sans MOD";
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Proposing a change to unhinted TTF "Noto Sans Arabic UI Regular" to
+            render variants of Arabic ligature لا (such as ڵا , used in Kurdish)
+        </p>
+        <table border="1">
+            <thead>
+                <th>Name</th>
+                <th>Current</th>
+                <th>Updated</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LAM WITH ALEF</td>
+                    <td>لا</td>
+                    <td>لا</td>
+                </tr>
+                <tr>
+                    <td>WITH V ABOVE</td>
+                    <td>ڵا</td>
+                    <td>ڵا</td>
+                </tr>
+                <tr>
+                    <td>WITH HAMZA ABOVE</td>
+                    <td>لٔا</td>
+                    <td>لٔا</td>
+                </tr>
+                <tr>
+                    <td>WITH HAMZA BELOW</td>
+                    <td>لاٟ</td>
+                    <td>لاٟ</td>
+                </tr>
+                <tr>
+                    <td>Test final form</td>
+                    <td>مڵابس</td>
+                    <td>مڵابس</td>
+                </tr>
+
+                alefHamzabelow-ar.fina by lam_alefHamzabelow-ar; \012 sub
+                lam-ar.medi alefWavyhamzaabove-ar.fina by
+                lam_alefWavyhamzaabove-ar.fina; \012 sub lam-ar.medi
+                alefWavyhamzabelow-ar.fina by lam_alefWavyhamzabelow-ar.fina;
+                \012 sub lam-ar.init alefMadda-ar.fina by lam_alefMadda-ar; \012
+                sub lam-ar.init alefWasla-ar.fina by lam_alefWasla-ar; \012 sub
+                lam-ar.medi hah-ar.medi alefMaksura-ar.fina by
+                lam_hah_alefMaksura-ar.fina; \012 sub lamDotabove-ar.medi
+                alef-ar.fina by lamDotabove_alef-ar.fina; \012 sub
+                lamThreedotsabove-ar.medi alef-ar.fina by
+                lamThreedotsabove_alef-ar.fina; \012 sub
+                lamThreedotsbelow-ar.medi alef-ar.fina by
+                lamThreedotsbelow_alef-ar.fina;
+            </tbody>
+        </table>
+    </body>
+</html>
